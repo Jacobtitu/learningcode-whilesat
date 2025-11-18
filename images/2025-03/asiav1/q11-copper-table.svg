@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240">
+  <style>
+    .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .header { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #000; }
+    .cell { font-family: Arial, sans-serif; font-size: 13px; fill: #000; }
+    .line { stroke: #000; stroke-width: 1; }
+  </style>
+  
+  <!-- Title -->
+  <text x="300" y="25" class="title">Millions of Metric Tons of Copper Mined in 1995 and 2020</text>
+  
+  <!-- Table lines -->
+  <line x1="50" y1="50" x2="550" y2="50" class="line"/>
+  <line x1="50" y1="50" x2="50" y2="220" class="line"/>
+  <line x1="200" y1="50" x2="200" y2="220" class="line"/>
+  <line x1="350" y1="50" x2="350" y2="220" class="line"/>
+  <line x1="550" y1="50" x2="550" y2="220" class="line"/>
+  <line x1="50" y1="90" x2="550" y2="90" class="line"/>
+  <line x1="50" y1="130" x2="550" y2="130" class="line"/>
+  <line x1="50" y1="170" x2="550" y2="170" class="line"/>
+  <line x1="50" y1="210" x2="550" y2="210" class="line"/>
+  <line x1="50" y1="220" x2="550" y2="220" class="line"/>
+  
+  <!-- Headers -->
+  <text x="125" y="75" class="header">Country</text>
+  <text x="275" y="75" class="header">1995</text>
+  <text x="450" y="75" class="header">2020</text>
+  
+  <!-- Data rows -->
+  <text x="125" y="115" class="cell">Mexico</text>
+  <text x="275" y="115" class="cell">0.33</text>
+  <text x="450" y="115" class="cell">0.73</text>
+  
+  <text x="125" y="155" class="cell">United States</text>
+  <text x="275" y="155" class="cell">1.85</text>
+  <text x="450" y="155" class="cell">1.20</text>
+  
+  <text x="125" y="195" class="cell">Peru</text>
+  <text x="275" y="195" class="cell">0.38</text>
+  <text x="450" y="195" class="cell">2.15</text>
+  
+  <text x="125" y="235" class="cell">Poland</text>
+  <text x="275" y="235" class="cell">0.38</text>
+  <text x="450" y="235" class="cell">0.39</text>
+</svg>
+

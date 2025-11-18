@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Test Version - Prep Ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0a0e27;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+            overflow: hidden;
+        }
+
+        .bg-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #60a6e4, #557eef);
+            border-radius: 20px;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            top: 60%;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #7db6eb, #557eef);
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(225deg, #60a6e4, #216db1);
+            border-radius: 10px;
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            top: 30%;
+            right: 30%;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(315deg, #557eef, #7db6eb);
+            border-radius: 30px;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        .floating-text {
+            position: absolute;
+            color: rgba(96, 166, 228, 0.15);
+            font-size: 120px;
+            font-weight: 800;
+            animation: floatText 15s infinite ease-in-out;
+        }
+
+        .floating-text:nth-child(5) {
+            top: 15%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .floating-text:nth-child(6) {
+            bottom: 20%;
+            right: 8%;
+            animation-delay: 5s;
+        }
+
+        @keyframes floatText {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.1; }
+            50% { transform: translateY(-50px) scale(1.1); opacity: 0.2; }
+        }
+
+        /* Header */
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 60px;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(96, 166, 228, 0.2);
+        }
+
+        .logo {
+            font-size: 2.2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .navigation a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #60a6e4, #557eef);
+            transition: width 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #60a6e4;
+        }
+
+        .navigation a:hover::after {
+            width: 100%;
+        }
+
+        .button1, .button2 {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button1 {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .button1:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .button2 {
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            color: white;
+            box-shadow: 0 4px 15px rgba(96, 166, 228, 0.4);
+        }
+
+        .button2:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(96, 166, 228, 0.6);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .breadcrumb {
+            color: rgba(96, 166, 228, 0.8);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #60a6e4;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #557eef;
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: #60a6e4;
+            border: 2px solid rgba(96, 166, 228, 0.3);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .back-button:hover {
+            background: rgba(96, 166, 228, 0.2);
+            border-color: #60a6e4;
+            transform: translateY(-2px);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-header h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #60a6e4 50%, #557eef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Test Versions Grid */
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .test-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 166, 228, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .test-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(96, 166, 228, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .test-card:hover {
+            border-color: rgba(96, 166, 228, 0.6);
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(96, 166, 228, 0.3);
+        }
+
+        .test-card:hover::before {
+            left: 100%;
+        }
+
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .test-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: white;
+        }
+
+        .region-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .region-asia {
+            background: linear-gradient(135deg, #ff9a56, #ffad56);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
+        }
+
+        .region-us {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .region-international {
+            background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+        }
+
+        .test-info {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .test-modules {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .module-badge {
+            padding: 8px 16px;
+            background: rgba(96, 166, 228, 0.15);
+            border: 1px solid rgba(96, 166, 228, 0.3);
+            border-radius: 10px;
+            color: #60a6e4;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .test-action {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .test-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(96, 166, 228, 0.4);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .header-nav {
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+
+            .navigation {
+                gap: 15px;
+            }
+
+            .page-header h1 {
+                font-size: 2.5em;
+            }
+
+            .test-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="floating-text">SAT</div>
+            <div class="floating-text">1600</div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <div class="header-nav">
+        <div class="logo">Prep Ai</div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="select-date.html">Practice Questions</a>
+            <button class="button1">Register</button>
+            <button class="button2">Login</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> → <a href="select-date.html">Select Date</a> → <span id="currentDate">Select Test Version</span>
+        </div>
+
+        <a href="select-date.html" class="back-button">← Back to Date Selection</a>
+
+        <div class="page-header">
+            <h1 id="pageTitle">Select Test Version</h1>
+            <p id="pageSubtitle">Choose a specific test version to begin practicing</p>
+        </div>
+
+        <div class="test-grid" id="testGrid">
+            <!-- Test versions will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Get selected date from URL or localStorage
+        function getSelectedDate() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('date') || localStorage.getItem('selectedDate') || null;
+        }
+
+        // Get test versions for selected date
+        function getTestVersions() {
+            const selectedDate = getSelectedDate();
+            const storedTests = localStorage.getItem('selectedDateTests');
+            
+            if (storedTests) {
+                return JSON.parse(storedTests);
+            }
+            
+            // Fallback: return empty array if no date selected
+            return [];
+        }
+
+        // Date info mapping
+        const dateInfo = {
+            '2025-03': { title: 'March 2025', subtitle: 'Spring Administration Tests' },
+            '2025-05': { title: 'May 2025', subtitle: 'Primary Testing Window' },
+            '2025-06': { title: 'June 2025', subtitle: 'End of School Year Tests' },
+            '2025-08': { title: 'August 2025', subtitle: 'Summer Administration' },
+            '2025-09': { title: 'September 2025', subtitle: 'Fall Start Tests' },
+            '2025-10': { title: 'October 2025', subtitle: 'Fall Administration' }
+        };
+
+        function renderTestVersions() {
+            const testGrid = document.getElementById('testGrid');
+            const selectedDate = getSelectedDate();
+            const testVersions = getTestVersions();
+
+            // Update page title
+            if (selectedDate && dateInfo[selectedDate]) {
+                document.getElementById('pageTitle').textContent = dateInfo[selectedDate].title + ' - Test Versions';
+                document.getElementById('pageSubtitle').textContent = 'Select a test version to begin practicing';
+                document.getElementById('currentDate').textContent = dateInfo[selectedDate].title;
+            }
+
+            if (testVersions.length === 0) {
+                testGrid.innerHTML = '<div class="empty-state">No test versions available. Please select a date first.</div>';
+                return;
+            }
+
+            testGrid.innerHTML = testVersions.map((test, index) => `
+                <div class="test-card" onclick="selectTest('${selectedDate}', '${test.id}', '${test.region}')">
+                    <div class="test-header">
+                        <div class="test-name">${test.name}</div>
+                        <span class="region-badge region-${test.region.toLowerCase()}">${test.region}</span>
+                    </div>
+                    <div class="test-info">
+                        Available modules for this test version
+                    </div>
+                    <div class="test-modules">
+                        ${test.modules.map(module => 
+                            `<span class="module-badge">${module}</span>`
+                        ).join('')}
+                    </div>
+                    <button class="test-action" onclick="event.stopPropagation(); selectTest('${selectedDate}', '${test.id}', '${test.region}')">
+                        Start Practice
+                    </button>
+                </div>
+            `).join('');
+
+            // Animate cards on load
+            const cards = document.querySelectorAll('.test-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                    card.style.transition = 'all 0.5s ease';
+                }, index * 100);
+            });
+        }
+
+        function selectTest(date, testId, region) {
+            // Store selected test info
+            localStorage.setItem('selectedTest', JSON.stringify({
+                date: date,
+                testId: testId,
+                region: region
+            }));
+
+            // Navigate to questions page
+            window.location.href = `dynamic-questions.html?date=${date}&test=${testId}&region=${region}`;
+        }
+
+        // Initialize page
+        renderTestVersions();
+    </script>
+</body>
+</html>

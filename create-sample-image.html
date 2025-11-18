@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial; background: #f8f9fa; }
+        .chart { width: 600px; height: 400px; background: white; border: 1px solid #ddd; margin: 0 auto; padding: 20px; }
+        .title { text-align: center; font-weight: bold; margin-bottom: 20px; }
+        .bar { height: 40px; margin: 10px 0; display: flex; align-items: center; }
+        .solar { width: 70%; background: #ffd700; }
+        .wind { width: 85%; background: #87ceeb; }
+        .hydro { width: 90%; background: #32cd32; }
+        .label { margin-right: 10px; min-width: 80px; }
+        .percentage { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="chart">
+        <div class="title">Renewable Energy Efficiency Rates</div>
+        <div class="bar">
+            <div class="label">Solar:</div>
+            <div class="solar"></div>
+            <div class="percentage">70%</div>
+        </div>
+        <div class="bar">
+            <div class="label">Wind:</div>
+            <div class="wind"></div>
+            <div class="percentage">85%</div>
+        </div>
+        <div class="bar">
+            <div class="label">Hydro:</div>
+            <div class="hydro"></div>
+            <div class="percentage">90%</div>
+        </div>
+    </div>
+    <script>
+        // Convert to image
+        setTimeout(() => {
+            html2canvas(document.querySelector('.chart')).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'sample-chart.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        }, 1000);
+    </script>
+</body>
+</html>

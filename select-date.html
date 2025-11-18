@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Test Date - Prep Ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0a0e27;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+            overflow: hidden;
+        }
+
+        .bg-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #60a6e4, #557eef);
+            border-radius: 20px;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            top: 60%;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #7db6eb, #557eef);
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(225deg, #60a6e4, #216db1);
+            border-radius: 10px;
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            top: 30%;
+            right: 30%;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(315deg, #557eef, #7db6eb);
+            border-radius: 30px;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        /* Floating Text */
+        .floating-text {
+            position: absolute;
+            color: rgba(96, 166, 228, 0.15);
+            font-size: 120px;
+            font-weight: 800;
+            animation: floatText 15s infinite ease-in-out;
+        }
+
+        .floating-text:nth-child(5) {
+            top: 15%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .floating-text:nth-child(6) {
+            bottom: 20%;
+            right: 8%;
+            animation-delay: 5s;
+        }
+
+        @keyframes floatText {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.1; }
+            50% { transform: translateY(-50px) scale(1.1); opacity: 0.2; }
+        }
+
+        /* Header */
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 60px;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(96, 166, 228, 0.2);
+        }
+
+        .logo {
+            font-size: 2.2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .navigation a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #60a6e4, #557eef);
+            transition: width 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #60a6e4;
+        }
+
+        .navigation a:hover::after {
+            width: 100%;
+        }
+
+        .button1, .button2 {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button1 {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .button1:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .button2 {
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            color: white;
+            box-shadow: 0 4px 15px rgba(96, 166, 228, 0.4);
+        }
+
+        .button2:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(96, 166, 228, 0.6);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .breadcrumb {
+            color: rgba(96, 166, 228, 0.8);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #60a6e4;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #557eef;
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: #60a6e4;
+            border: 2px solid rgba(96, 166, 228, 0.3);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .back-button:hover {
+            background: rgba(96, 166, 228, 0.2);
+            border-color: #60a6e4;
+            transform: translateY(-2px);
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-header h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #60a6e4 50%, #557eef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Stats Overview */
+        .stats-overview {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 166, 228, 0.3);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .stats-overview h3 {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            background: rgba(96, 166, 228, 0.1);
+            border: 1px solid rgba(96, 166, 228, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(96, 166, 228, 0.5);
+            box-shadow: 0 10px 30px rgba(96, 166, 228, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+
+        /* Date Grid */
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .date-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 166, 228, 0.2);
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .date-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(96, 166, 228, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .date-card:hover {
+            border-color: rgba(96, 166, 228, 0.6);
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(96, 166, 228, 0.3);
+        }
+
+        .date-card:hover::before {
+            left: 100%;
+        }
+
+        .date-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #60a6e4;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .date-title {
+            font-size: 2em;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .date-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .date-info {
+            background: rgba(96, 166, 228, 0.1);
+            border: 1px solid rgba(96, 166, 228, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .test-count {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .test-count-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+
+        .test-count-number {
+            font-weight: 700;
+            color: #60a6e4;
+            font-size: 1.2em;
+        }
+
+        .region-badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .region-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .region-asia {
+            background: linear-gradient(135deg, #ff9a56, #ffad56);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
+        }
+
+        .region-us {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .region-international {
+            background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-nav {
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+
+            .navigation {
+                gap: 15px;
+            }
+
+            .navigation a {
+                font-size: 0.9em;
+            }
+
+            .button1, .button2 {
+                padding: 10px 20px;
+                font-size: 0.8em;
+            }
+
+            .page-header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .date-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="floating-text">SAT</div>
+            <div class="floating-text">1600</div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <div class="header-nav">
+        <div class="logo">Prep Ai</div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="select-date.html">Practice Questions</a>
+            <button class="button1">Register</button>
+            <button class="button2">Login</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Navigation Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">🏠 Home</a> → Select Test Date
+        </div>
+
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            ← Back to Home
+        </a>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Choose Your Test Date</h1>
+            <p>Select from authentic Digital SAT questions organized by official test administration dates. Each date contains multiple test versions from different regions worldwide.</p>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="stats-overview">
+            <h3>Available Practice Content</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Test Dates</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Questions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Regions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Authentic</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date Selection Grid -->
+        <div class="date-grid" id="dateGrid">
+            <!-- Dates will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Test dates data with all test versions
+        const testDates = [
+            {
+                date: "2025-03",
+                title: "March 2025",
+                subtitle: "Spring Administration",
+                regions: ["Asia", "US"],
+                questionCount: 297,
+                testCount: 11,
+                tests: [
+                    { id: "asiav1", name: "Asia v1", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav2", name: "Asia v2", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav3", name: "Asia v3", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav4", name: "Asia v4", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav5", name: "Asia v5", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav6", name: "Asia v6", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav8", name: "Asia v8", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "asiav9", name: "Asia v9", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv1", name: "US v1", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv2", name: "US v2", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv3", name: "US v3", region: "US", modules: ["Reading and Writing", "Math"] }
+                ]
+            },
+            {
+                date: "2025-05",
+                title: "May 2025", 
+                subtitle: "Primary Testing Window",
+                regions: ["US", "International"],
+                questionCount: 147,
+                testCount: 6,
+                tests: [
+                    { id: "usv1", name: "US v1", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv2", name: "US v2", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv3", name: "US v3", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv1", name: "International v1", region: "International", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv2", name: "International v2", region: "International", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv3", name: "International v3", region: "International", modules: ["Reading and Writing", "Math"] }
+                ]
+            },
+            {
+                date: "2025-06",
+                title: "June 2025",
+                subtitle: "End of School Year",
+                regions: ["Asia", "US", "International"],
+                questionCount: 73,
+                testCount: 3,
+                tests: [
+                    { id: "asiav1", name: "Asia v1", region: "Asia", modules: ["Reading and Writing", "Math"] },
+                    { id: "usv1", name: "US v1", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv1", name: "International v1", region: "International", modules: ["Reading and Writing", "Math"] }
+                ]
+            },
+            {
+                date: "2025-08",
+                title: "August 2025",
+                subtitle: "Summer Administration",
+                regions: ["US", "International"],
+                questionCount: 49,
+                testCount: 2,
+                tests: [
+                    { id: "usv1", name: "US v1", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv1", name: "International v1", region: "International", modules: ["Reading and Writing", "Math"] }
+                ]
+            },
+            {
+                date: "2025-09",
+                title: "September 2025",
+                subtitle: "Fall Start",
+                regions: ["Asia", "US"],
+                questionCount: 25,
+                testCount: 1,
+                tests: [
+                    { id: "asiav1", name: "Asia v1", region: "Asia", modules: ["Reading and Writing", "Math"] }
+                ]
+            },
+            {
+                date: "2025-10",
+                title: "October 2025",
+                subtitle: "Fall Administration",
+                regions: ["US", "International"],
+                questionCount: 53,
+                testCount: 2,
+                tests: [
+                    { id: "usv1", name: "US v1", region: "US", modules: ["Reading and Writing", "Math"] },
+                    { id: "internationalv1", name: "International v1", region: "International", modules: ["Reading and Writing", "Math"] }
+                ]
+            }
+        ];
+
+        function renderDateGrid() {
+            const dateGrid = document.getElementById('dateGrid');
+            
+            dateGrid.innerHTML = testDates.map(testDate => `
+                <div class="date-card" onclick="selectDate('${testDate.date}')">
+                    <div class="date-icon">${testDate.date.replace('-', ' ')}</div>
+                    <div class="date-title">${testDate.title}</div>
+                    <div class="date-subtitle">${testDate.subtitle}</div>
+                    
+                    <div class="date-info">
+                        <div class="test-count">
+                            <span class="test-count-label">Available Tests:</span>
+                            <span class="test-count-number">${testDate.testCount}</span>
+                        </div>
+                        <div class="test-count">
+                            <span class="test-count-label">Total Questions:</span>
+                            <span class="test-count-number">${testDate.questionCount}</span>
+                        </div>
+                        
+                        <div class="region-badges">
+                            ${testDate.regions.map(region => 
+                                `<span class="region-badge region-${region.toLowerCase()}">${region}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectDate(dateCode) {
+            // Store selected date and test versions for the next page
+            const selectedDate = testDates.find(d => d.date === dateCode);
+            localStorage.setItem('selectedDate', dateCode);
+            localStorage.setItem('selectedDateTests', JSON.stringify(selectedDate.tests));
+            
+            // Navigate to practice page to show test versions
+            window.location.href = `practice.html?date=${dateCode}`;
+        }
+
+        // Initialize the page
+        renderDateGrid();
+
+        // Add staggered animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.date-card');
+            
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                    card.style.transition = 'all 0.5s ease';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

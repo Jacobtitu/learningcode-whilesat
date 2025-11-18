@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="450" viewBox="0 0 700 450">
+  <style>
+    .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .axis-label { font-family: Arial, sans-serif; font-size: 12px; fill: #000; }
+    .story-label { font-family: Arial, sans-serif; font-size: 11px; fill: #000; text-anchor: middle; }
+    .tick { stroke: #000; stroke-width: 1; }
+    .bar-unspoiled { fill: #d3d3d3; }
+    .bar-spoiled { fill: #666666; }
+    .legend-text { font-family: Arial, sans-serif; font-size: 11px; fill: #000; }
+  </style>
+  
+  <!-- Title -->
+  <text x="350" y="25" class="title">Story Rating: Spoiled vs. Unspoiled</text>
+  
+  <!-- Y-axis label -->
+  <text x="20" y="200" class="axis-label" transform="rotate(-90 20 200)">Average enjoyment rating</text>
+  
+  <!-- Y-axis scale (0-8) -->
+  <line x1="80" y1="380" x2="80" y2="60" class="tick"/>
+  <line x1="80" y1="380" x2="650" y2="380" class="tick"/>
+  
+  <!-- Y-axis ticks and labels -->
+  <text x="75" y="385" class="axis-label" text-anchor="end">0</text>
+  <text x="75" y="340" class="axis-label" text-anchor="end">2</text>
+  <text x="75" y="300" class="axis-label" text-anchor="end">4</text>
+  <text x="75" y="260" class="axis-label" text-anchor="end">6</text>
+  <text x="75" y="220" class="axis-label" text-anchor="end">8</text>
+  <text x="75" y="180" class="axis-label" text-anchor="end">10</text>
+  
+  <!-- X-axis label -->
+  <text x="365" y="420" class="axis-label">Story</text>
+  
+  <!-- Story positions -->
+  <text x="150" y="400" class="story-label">A Dark Brown Dog</text>
+  <text x="250" y="400" class="story-label">Owl Creek Bridge</text>
+  <text x="350" y="400" class="story-label">Blitzed</text>
+  <text x="450" y="400" class="story-label">A Chess Problem</text>
+  <text x="550" y="400" class="story-label">The Calm</text>
+  <text x="650" y="400" class="story-label">Plumbing</text>
+  
+  <!-- Bars for "A Dark Brown Dog" (x=150) -->
+  <!-- Unspoiled: ~3.5, Spoiled: ~4.5 (scale: 1 unit = 32px, base at 380) -->
+  <rect x="130" y="320" width="20" height="60" class="bar-unspoiled"/>
+  <rect x="150" y="300" width="20" height="80" class="bar-spoiled"/>
+  
+  <!-- Bars for "Owl Creek Bridge" (x=250) -->
+  <!-- Unspoiled: ~4.9, Spoiled: ~5.1 -->
+  <rect x="230" y="300" width="20" height="80" class="bar-unspoiled"/>
+  <rect x="250" y="295" width="20" height="85" class="bar-spoiled"/>
+  
+  <!-- Bars for "Blitzed" (x=350) -->
+  <!-- Unspoiled: ~6.2, Spoiled: ~7.0 -->
+  <rect x="330" y="260" width="20" height="120" class="bar-unspoiled"/>
+  <rect x="350" y="240" width="20" height="140" class="bar-spoiled"/>
+  
+  <!-- Bars for "A Chess Problem" (x=450) -->
+  <!-- Unspoiled: ~6.2, Spoiled: ~7.1 -->
+  <rect x="430" y="260" width="20" height="120" class="bar-unspoiled"/>
+  <rect x="450" y="235" width="20" height="145" class="bar-spoiled"/>
+  
+  <!-- Bars for "The Calm" (x=550) -->
+  <!-- Unspoiled: ~4.3, Spoiled: ~5.0 -->
+  <rect x="530" y="310" width="20" height="70" class="bar-unspoiled"/>
+  <rect x="550" y="300" width="20" height="80" class="bar-spoiled"/>
+  
+  <!-- Bars for "Plumbing" (x=650) -->
+  <!-- Unspoiled: ~4.1, Spoiled: ~4.9 -->
+  <rect x="630" y="315" width="20" height="65" class="bar-unspoiled"/>
+  <rect x="650" y="305" width="20" height="75" class="bar-spoiled"/>
+  
+  <!-- Legend -->
+  <rect x="100" y="30" width="15" height="15" class="bar-unspoiled"/>
+  <text x="120" y="42" class="legend-text">Unspoiled</text>
+  <rect x="200" y="30" width="15" height="15" class="bar-spoiled"/>
+  <text x="220" y="42" class="legend-text">Spoiled</text>
+</svg>
+

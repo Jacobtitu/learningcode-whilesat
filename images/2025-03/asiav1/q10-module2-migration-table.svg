@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240">
+  <style>
+    .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .header { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #000; }
+    .cell { font-family: Arial, sans-serif; font-size: 13px; fill: #000; }
+    .line { stroke: #000; stroke-width: 1; }
+  </style>
+  
+  <!-- Title -->
+  <text x="350" y="25" class="title">Reported Annual Travel Distances in Four Studies of Migrating Animal Populations</text>
+  
+  <!-- Table lines -->
+  <line x1="50" y1="50" x2="650" y2="50" class="line"/>
+  <line x1="50" y1="50" x2="50" y2="220" class="line"/>
+  <line x1="200" y1="50" x2="200" y2="220" class="line"/>
+  <line x1="350" y1="50" x2="350" y2="220" class="line"/>
+  <line x1="500" y1="50" x2="500" y2="220" class="line"/>
+  <line x1="650" y1="50" x2="650" y2="220" class="line"/>
+  <line x1="50" y1="90" x2="650" y2="90" class="line"/>
+  <line x1="50" y1="130" x2="650" y2="130" class="line"/>
+  <line x1="50" y1="170" x2="650" y2="170" class="line"/>
+  <line x1="50" y1="210" x2="650" y2="210" class="line"/>
+  <line x1="50" y1="220" x2="650" y2="220" class="line"/>
+  
+  <!-- Headers -->
+  <text x="125" y="75" class="header">Species</text>
+  <text x="275" y="75" class="header">Continent</text>
+  <text x="425" y="75" class="header">Distance (km)</text>
+  <text x="575" y="75" class="header">Measurement method</text>
+  
+  <!-- Data rows -->
+  <!-- Row 1: Brown bear -->
+  <text x="125" y="115" class="cell">Brown bear</text>
+  <text x="275" y="115" class="cell">North America</text>
+  <text x="425" y="115" class="cell">1,325</text>
+  <text x="575" y="115" class="cell">GPS</text>
+  
+  <!-- Row 2: Tibetan antelope -->
+  <text x="125" y="155" class="cell">Tibetan antelope</text>
+  <text x="275" y="155" class="cell">Asia</text>
+  <text x="425" y="155" class="cell">700</text>
+  <text x="575" y="155" class="cell">RTD</text>
+  
+  <!-- Row 3: Caribou -->
+  <text x="125" y="195" class="cell">Caribou</text>
+  <text x="275" y="195" class="cell">North America</text>
+  <text x="425" y="195" class="cell">4,868</text>
+  <text x="575" y="195" class="cell">GPS</text>
+  
+  <!-- Row 4: Reindeer -->
+  <text x="125" y="235" class="cell">Reindeer</text>
+  <text x="275" y="235" class="cell">Asia</text>
+  <text x="425" y="235" class="cell">1,200</text>
+  <text x="575" y="235" class="cell">RTD</text>
+</svg>
+
