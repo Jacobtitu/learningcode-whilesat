@@ -1,0 +1,96 @@
+═══════════════════════════════════════════════════════════════
+  HOW TO ADD QUESTIONS FROM YOUR PDF - STEP BY STEP
+═══════════════════════════════════════════════════════════════
+
+You have: 202503asiav1.pdf (Math Module 1, 22 questions)
+
+═══════════════════════════════════════════════════════════════
+STEP 1: EXTRACT IMAGES FROM PDF
+═══════════════════════════════════════════════════════════════
+
+METHOD A: Screenshot (Easiest - Recommended!)
+
+1. Open your PDF: 202503asiav1.pdf
+2. For each question with a graph/chart:
+   
+   Example - Question 2:
+   - Scroll to Question 2 (the graph question)
+   - Press: Cmd + Shift + 4 (Mac) or Win + Shift + S (Windows)
+   - Drag to select JUST the graph
+   - Screenshot saves automatically
+   - Rename it to: q2-graph.png
+   - Move it to: bulk-import/images/q2-graph.png
+
+3. Repeat for all questions with images
+
+METHOD B: Export from PDF (Better quality)
+
+1. Open PDF in Preview (Mac) or Adobe Reader
+2. Select the graph/chart area
+3. Copy it (Cmd + C)
+4. Open Preview → New from Clipboard
+5. Export as PNG → Save to bulk-import/images/q2-graph.png
+
+═══════════════════════════════════════════════════════════════
+STEP 2: ADD QUESTIONS TO CSV
+═══════════════════════════════════════════════════════════════
+
+Open: bulk-import/questions.csv
+
+Add rows like this:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUESTION 1 (No Image):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1,"A jar has 310 buttons, and 20% of these buttons are green. How many buttons in the jar are green?","","62","310","20","155","A","20% of 310 = 0.20 × 310 = 62","","","easy","percentages","Math Module 1","2025-03","Asia",1,"2025-03 Asia Test 1","Math"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUESTION 2 (With Image):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2,"The solution to a system of linear equations is (5, 5). Which of the following could be the graph of the equations in the system?","","Graph A","Graph B","Graph C","Graph D","A","The two lines intersect at (5, 5), which is the solution to the system.","q2-graph.png","Graph showing two lines intersecting at (5,5)","medium","systems-of-equations","Math Module 1","2025-03","Asia",1,"2025-03 Asia Test 1","Math"
+
+IMPORTANT: Make sure "q2-graph.png" matches your actual image filename!
+
+═══════════════════════════════════════════════════════════════
+STEP 3: RUN THE SCRIPT
+═══════════════════════════════════════════════════════════════
+
+In terminal, run:
+
+    python import.py
+
+The script will:
+  ✅ Copy images to correct location
+  ✅ Add questions to database
+  ✅ Show you progress
+
+═══════════════════════════════════════════════════════════════
+YOUR FOLDER STRUCTURE SHOULD LOOK LIKE:
+═══════════════════════════════════════════════════════════════
+
+bulk-import/
+├── questions.csv          ← Your questions here
+└── images/               ← Your images here
+    ├── q2-graph.png      ← Screenshot of question 2's graph
+    ├── q11-table.png     ← Screenshot of question 11's table
+    └── q13-chart.png     ← Screenshot of question 13's chart
+
+═══════════════════════════════════════════════════════════════
+QUICK CHECKLIST:
+═══════════════════════════════════════════════════════════════
+
+Before running script:
+  ☐ Images saved to bulk-import/images/
+  ☐ Images named clearly (q2-graph.png, etc.)
+  ☐ Questions added to bulk-import/questions.csv
+  ☐ Image filenames in CSV match actual files
+  ☐ All columns filled in CSV
+
+After running script:
+  ☐ Check questions-database.json for new questions
+  ☐ Check images/2025-03/asiav1/ for copied images
+  ☐ Test a question in your app
+
+═══════════════════════════════════════════════════════════════

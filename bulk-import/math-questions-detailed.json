@@ -1,0 +1,237 @@
+[
+  {
+    "number": 1,
+    "text_parts": [
+      "A jar has 310 buttons, and 20% of these buttons are green. How many buttons in the jar are green?"
+    ],
+    "choices": []
+  },
+  {
+    "number": 2,
+    "text_parts": [
+      "The solution to a system of linear equations is (5, 5). Which of the following could be the graph of the",
+      "equations in the system?",
+      "A)",
+      "B)",
+      "C)",
+      "D)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 3,
+    "text_parts": [
+      "The scatterplot shows the relationship between two variables, x and y. A line of best fit is also shown. Which of",
+      "the following equations best represents the line of best fit shown?"
+    ],
+    "choices": [
+      "y = 0.6 + 1.5x",
+      "y = 0.6 - 1.5x",
+      "y = - 0.6 + 1.5x",
+      "y = - 0.6 - 1.5x"
+    ]
+  },
+  {
+    "number": 4,
+    "text_parts": [
+      "y = - 0.5",
+      "y = x\u00b2 + 8x + a",
+      "In the given system of equations, a is a positive integer constant. The system has no real solutions. What is the",
+      "least possible value of a?"
+    ],
+    "choices": []
+  },
+  {
+    "number": 5,
+    "text_parts": [
+      "The width of a rectangle is 8 centimeters. The length of the rectangle is 50 centimeters longer than the width.",
+      "What is the area, in square centimeters, of this rectangle?"
+    ],
+    "choices": [
+      "8",
+      "16",
+      "66",
+      "464"
+    ]
+  },
+  {
+    "number": 6,
+    "text_parts": [
+      "6x +27 = 6x +k",
+      "In the given equation, k is a constant. The equation has infinitely many solutions. What is the value of k?"
+    ],
+    "choices": []
+  },
+  {
+    "number": 7,
+    "text_parts": [
+      "The graph shows the height above ground, in meters, of a ball x seconds after the ball was launched upward",
+      "from a platform. Which statement is the best interpretation of the marked point (1.0, 3.9) in this context?"
+    ],
+    "choices": [
+      "1.0 second after being launched, the ball's height above ground is 3.9 meters",
+      "3.9 seconds after being launched, the ball's height above ground is 1.0 meter",
+      "The ball was launched from an initial height of 1.0 meter with an initial velocity of 3.9 meters per second.",
+      "The ball was launched from an initial height of 3.9 meters with an initial velocity of 1.0 meter per second."
+    ]
+  },
+  {
+    "number": 8,
+    "text_parts": [
+      "The function f is defined by f(x)= 3x \u2013 1/4 . What is the y-intercept of the graph of y= f(x) in the xy-plane?"
+    ],
+    "choices": [
+      "(0, -1/4)",
+      "(0, -3)",
+      "(0, 3)",
+      "(0, 4)"
+    ]
+  },
+  {
+    "number": 9,
+    "text_parts": [
+      "Which of the following lists represents a data set with the smallest standard deviation?"
+    ],
+    "choices": [
+      "72,73, 75, 77, 78",
+      "73,73, 75, 77,77",
+      "73, 74, 75, 76, 77",
+      "74,75, 75, 75, 76"
+    ]
+  },
+  {
+    "number": 10,
+    "text_parts": [],
+    "choices": []
+  },
+  {
+    "number": 11,
+    "text_parts": [
+      "A)",
+      "B)",
+      "C)",
+      "D)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 12,
+    "text_parts": [
+      "At a convention center, there are a total of 275 visitors. Each visitor is located in either room A, room B, or",
+      "room C. If one of these visitors is selected at random, the probability of selecting a visitor who is located in",
+      "room A is 0.68, and the probability of selecting a visitor who is located in room B is 0.24. How many visitors",
+      "are located in room C?"
+    ],
+    "choices": [
+      "8",
+      "22",
+      "45",
+      "121"
+    ]
+  },
+  {
+    "number": 13,
+    "text_parts": [
+      "Line t is defined by y= -(1/4)x + 15. Line s is perpendicular to line t in the xy-plane. What is the slope of line s?"
+    ],
+    "choices": [
+      "15",
+      "4",
+      "1/4",
+      "1/15"
+    ]
+  },
+  {
+    "number": 14,
+    "text_parts": [
+      "A)",
+      "B)",
+      "C)",
+      "D)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 15,
+    "text_parts": [
+      "A)",
+      "B)",
+      "C)",
+      "D)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 16,
+    "text_parts": [
+      "The function m is defined by m(x) = 5x + 3, and the function p is defined by p(x)= 3-x .What is the value of",
+      "2m(3)-p(3)?"
+    ],
+    "choices": []
+  },
+  {
+    "number": 17,
+    "text_parts": [
+      "A school is ordering tablet computers for its students. The tablets cost $170 each, and 7% tax is added to the",
+      "total cost of the order. If the school can spend no more than 53,400 dollars on the tablets, including tax, what",
+      "is the maximum number of tablets that the school can order?"
+    ],
+    "choices": []
+  },
+  {
+    "number": 18,
+    "text_parts": [
+      "The difference between the measure of angle A and the measure of angle B is \u2013(5/12)\u03c0 radians. Which",
+      "expression shows the difference between the measure of angle A and the measure of angle B, in degrees?"
+    ],
+    "choices": [
+      "- (5/12) (180\ufe12/\u03c0)",
+      "- (5/12)\u03c0 (\u03c0/180\ufe12)",
+      "- (5/12)\u03c0(180\ufe12/\u03c0)",
+      "- (5/12)\u03c0(360\ufe12/\u03c0)"
+    ]
+  },
+  {
+    "number": 19,
+    "text_parts": [
+      "A researcher observes a sample of a nuclide. An exponential model estimates that the mass in grams, of the",
+      "sample decreases by 24% every 22.96 minutes. Which of the following equations could represent this model,",
+      "where M is the estimated mass, in grams, of the sample t minutes after the researcher began observing the",
+      "sample?",
+      "A)",
+      "B)",
+      "C)",
+      "D)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 20,
+    "text_parts": [],
+    "choices": [
+      "0",
+      "5",
+      "10",
+      "30"
+    ]
+  },
+  {
+    "number": 21,
+    "text_parts": [
+      "In triangle RST, the measure of angle R is 39\u00b0, the measure of angle S is x\u00b0, and the measure of angle T is (5x -",
+      "3)\ufe12. Point L lies on RS, point K lies on ST, and LK is parallel to RT. What is the measure, in degrees, of angle",
+      "SKL? (Disregard the degree symbol when entering your answer)"
+    ],
+    "choices": []
+  },
+  {
+    "number": 22,
+    "text_parts": [
+      "The function f is a quadratic function. In the xy-plane, the graph of y = f(x) has a vertex at (1,7) and passes",
+      "through the points (2, 53) and (-1, 191). What is the value of f(-2)- f(0)?"
+    ],
+    "choices": [
+      "145"
+    ]
+  }
+]

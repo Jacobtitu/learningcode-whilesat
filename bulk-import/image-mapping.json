@@ -1,0 +1,30 @@
+{
+  "Math Module 1": {
+    "comment": "Specify which questions have images. Edit this file to customize image matching.",
+    "questions": {
+      "1": {"type": "text"},
+      "2": {"type": "4_choices", "note": "System of equations graph choices"},
+      "3": {"type": "single", "note": "Scatterplot"},
+      "4": {"type": "text"},
+      "5": {"type": "text"},
+      "6": {"type": "text"},
+      "7": {"type": "single", "note": "Ball height graph"},
+      "8": {"type": "text"},
+      "9": {"type": "text"},
+      "10": {"type": "text"},
+      "11": {"type": "4_choices", "note": "Question IS images (only A/B/C/D shown)"},
+      "12": {"type": "text"},
+      "13": {"type": "text", "note": "Define perpendicular line - no graph shown"},
+      "14": {"type": "4_choices", "note": "Question IS images"},
+      "15": {"type": "4_choices", "note": "Question IS images"},
+      "16": {"type": "text"},
+      "17": {"type": "text", "note": "Tablet ordering word problem"},
+      "18": {"type": "text"},
+      "19": {"type": "text"},
+      "20": {"type": "text"},
+      "21": {"type": "text"},
+      "22": {"type": "single", "note": "Quadratic function graph"}
+    }
+  }
+}
+

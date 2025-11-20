@@ -1,0 +1,29 @@
+[
+  {
+    "question_number": 22,
+    "page": 27,
+    "text": "QUESTIONS",
+    "full_text": "22 QUESTIONS\nB) \u00a0237\nC) \u00a0368\nD) \u00a0421\nA) \u00a0The amount, in dollars, the technician earned for each hour she worked at her regular job\nB) \u00a0The amount, in dollars, the technician earned for each hour she worked at her second job\nC) \u00a0The number of hours the technician worked in one week at her regular job\nD) \u00a0The number of hours the technician worked in one week at her second job",
+    "choices": [
+      "237",
+      "368",
+      "421",
+      "The amount, in dollars, the technician earned for each hour she worked at her regular job",
+      "The amount, in dollars, the technician earned for each hour she worked at her second job",
+      "The number of hours the technician worked in one week at her regular job",
+      "The number of hours the technician worked in one week at her second job"
+    ]
+  },
+  {
+    "question_number": 9,
+    "page": 27,
+    "text": "- 34r = s",
+    "full_text": "9 - 34r = s\nA) \u00a0q = s - 34r\nB) \u00a0q = s + 34r\nC) \u00a0q = 34rs\nD) \u00a0q = - (s/34r)",
+    "choices": [
+      "q = s - 34r",
+      "q = s + 34r",
+      "q = 34rs",
+      "q = - (s/34r)"
+    ]
+  }
+]
