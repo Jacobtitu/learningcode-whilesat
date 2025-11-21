@@ -8755,10 +8755,10 @@
       "Tibetan antelope would be less than 700 kilometers if the GPS method had been used.",
       "caribou would be less than 4,868 kilometers if the RTD method had been used.",
       "caribou would be greater than 1,325 kilometers if the RTD method had been used.",
-      "which is equal to double the distance separating the two habitats a population migrates between each year. A researcher argues that since GPs records all of an animal's movements, using the GPS method to track a population would result in significantly higher recorded travel distances than using the RTD method would. For example, it's very likely that the distance reported for the ______ Which choice most effectively uses data from the table to complete the example? A) Tibetan antelope would be less than 700 kilometers if the GPS method had been used. B) caribou would be less than 4,868 kilometers if the RTD method had been used. C) caribou would be greater than 1,325 kilometers if the RTD method had been used. D) Tibetan antelope would be greater than 4,868 kilometers if the GPS method had been used."
+      "Tibetan antelope would be greater than 4,868 kilometers if the GPS method had been used."
     ],
     "questionType": "multiple-choice",
-    "correctAnswer": 1,
+    "correctAnswer": "B",
     "testId": "asiav1"
   },
   {
@@ -9257,16 +9257,16 @@
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q2-diagram.png",
+    "hasImageChoices": true,
+    "imageUrl": "",
     "choices": [
-      "",
-      "",
-      "",
-      ""
+      "images/2025-03/asiav1/math-module-1-q2-optionA.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionB.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionC.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionD.png"
     ],
     "questionType": "multiple-choice",
-    "correctAnswer": 0,
+    "correctAnswer": "A",
     "testId": "asiav1"
   },
   {
@@ -9334,7 +9334,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q5-diagram.png",
+    "imageUrl": "",
     "choices": [
       "8",
       "16",
@@ -9383,7 +9383,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q7-diagram.png",
+    "imageUrl": "",
     "choices": [
       "1.0 second after being launched, the ball's height above ground is 3.9 meters",
       "3.9 seconds after being launched, the ball's height above ground is 1.0 meter",
@@ -9410,7 +9410,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q8-diagram.png",
+    "imageUrl": "",
     "choices": [
       "(0, -1/4)",
       "(0, -3)",
@@ -9457,22 +9457,17 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "",
+    "questionText": "The expression 7x\u2076 + 9x\u2076 \u2013 8x\u2076 is equivalent to bx\u2076, where b is a constant. What is the value of b?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
+    "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "images/2025-03/asiav1/math-module-1-q10-optionA.png",
-      "images/2025-03/asiav1/math-module-1-q10-optionB.png",
-      "images/2025-03/asiav1/math-module-1-q10-optionC.png",
-      "images/2025-03/asiav1/math-module-1-q10-optionD.png"
-    ],
-    "questionType": "multiple-choice",
-    "correctAnswer": 0,
+    "choices": [],
+    "questionType": "grid-in",
+    "correctAnswer": "8",
     "testId": "asiav1"
   },
   {
@@ -9484,17 +9479,22 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "",
+    "questionText": "Which expression is equivalent to (158y)\u00b9/\u00b2, where y > 1?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q11-diagram.png",
-    "choices": [],
+    "hasImageChoices": false,
+    "imageUrl": "",
+    "choices": [
+      "158\u221ay",
+      "\u221a158 y",
+      "\u221a158y",
+      "\u221a(158y)\u00b2"
+    ],
     "questionType": "multiple-choice",
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "testId": "asiav1"
   },
   {
@@ -9560,22 +9560,22 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "",
+    "questionText": "Which table gives four values of x and their corresponding values of f(x) for the given exponential function?\n\nf(x) = -10 \u00b7 (2)^(x/3)",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q14-diagram.png",
+    "hasImageChoices": true,
+    "imageUrl": "",
     "choices": [
-      "",
-      "",
-      "",
-      ""
+      "images/2025-03/asiav1/math-module-1-q14-optionA.png",
+      "images/2025-03/asiav1/math-module-1-q14-optionB.png",
+      "images/2025-03/asiav1/math-module-1-q14-optionC.png",
+      "images/2025-03/asiav1/math-module-1-q14-optionD.png"
     ],
     "questionType": "multiple-choice",
-    "correctAnswer": 0,
+    "correctAnswer": "B",
     "testId": "asiav1"
   },
   {

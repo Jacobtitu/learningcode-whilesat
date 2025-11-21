@@ -213,6 +213,79 @@
             box-shadow: 0 6px 20px rgba(96, 166, 228, 0.3);
         }
 
+        /* Image choices container (below question) */
+        .image-choices-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .image-choice-item {
+            position: relative;
+            cursor: pointer;
+            border: 2px solid rgba(96, 166, 228, 0.2);
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .image-choice-item:hover {
+            border-color: #60a6e4;
+            box-shadow: 0 4px 15px rgba(96, 166, 228, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .image-choice-item.selected {
+            border-color: #60a6e4;
+            border-width: 3px;
+            box-shadow: 0 4px 15px rgba(96, 166, 228, 0.4);
+            background: linear-gradient(135deg, rgba(96, 166, 228, 0.1), rgba(85, 126, 239, 0.1));
+        }
+
+        .image-choice-item.correct-answer {
+            border-color: #4CAF50 !important;
+            border-width: 3px;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4) !important;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(56, 142, 60, 0.1)) !important;
+        }
+
+        .image-choice-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #60a6e4, #557eef);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .image-choice-item.selected .image-choice-label {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+        }
+
+        .image-choice-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+            margin: 0 auto;
+        }
+
         /* Right Pane - Answer Choices */
         .right-pane {
             flex: 1;
@@ -324,7 +397,7 @@
 
         .choice-image {
             width: 100%;
-            max-width: 400px;
+            max-width: 300px;
             height: auto;
             border-radius: 6px;
             margin-top: 10px;
@@ -333,6 +406,17 @@
         .choice.has-image {
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        /* Grid layout for image choices (2x2) */
+        .choices-container.has-image-choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .choices-container.has-image-choices .choice {
+            width: 100%;
         }
 
         /* Grid-In Input */
@@ -937,6 +1021,27 @@
                     </div>
                 `;
             }
+
+            // Check if question has image choices
+            const hasImageChoices = question.hasImageChoices || 
+                (question.choices && question.choices[0] && question.choices[0].startsWith('images/'));
+
+            // Add image choices below question if they exist
+            if (hasImageChoices && question.choices) {
+                questionHTML += `<div class="image-choices-container">`;
+                question.choices.forEach((choice, index) => {
+                    const letter = String.fromCharCode(65 + index);
+                    const imgSrc = choice.includes('?') ? choice : `${choice}?v=${Date.now()}`;
+                    questionHTML += `
+                        <div class="image-choice-item" data-choice-index="${index}" onclick="selectImageChoice(${index})">
+                            <div class="image-choice-label">${letter}</div>
+                            <img src="${imgSrc}" alt="Choice ${letter}" class="image-choice-image" 
+                                 onerror="this.style.display='none'">
+                        </div>
+                    `;
+                });
+                questionHTML += `</div>`;
+            }
             
             // DEBUG: Log question info
             console.log(`Loading Q${question.questionNumber}:`, {
@@ -1005,38 +1110,46 @@
             const hasImageChoices = question.hasImageChoices || 
                 (question.choices && question.choices[0] && question.choices[0].startsWith('images/'));
 
+            // Remove grid layout class (images are now in left pane)
+            container.classList.remove('has-image-choices');
+
             question.choices.forEach((choice, index) => {
                 const choiceElement = document.createElement('label');
                 choiceElement.className = 'choice';
-                if (hasImageChoices) choiceElement.classList.add('has-image');
                 choiceElement.setAttribute('data-choice-index', index);
                 
                 const letter = String.fromCharCode(65 + index);
 
-                if (hasImageChoices) {
-                    const imgSrc = choice.includes('?') ? choice : `${choice}?v=${Date.now()}`;
-                    choiceElement.innerHTML = `
-                        <input type="radio" name="answer" value="${index}">
-                        <span class="choice-label">${letter}</span>
-                        <img src="${imgSrc}" alt="Choice ${letter}" class="choice-image" 
-                             onerror="this.style.display='none'">
-                    `;
-                } else {
-                    choiceElement.innerHTML = `
-                        <input type="radio" name="answer" value="${index}">
-                        <span class="choice-label">${letter}</span>
-                        <span class="choice-text">${choice}</span>
-                    `;
-                }
+                // Always show text choices on the right (A, B, C, D)
+                // Images are shown in the left pane below the question
+                choiceElement.innerHTML = `
+                    <input type="radio" name="answer" value="${index}">
+                    <span class="choice-label">${letter}</span>
+                    <span class="choice-text">${hasImageChoices ? `Option ${letter}` : choice}</span>
+                `;
 
                 choiceElement.addEventListener('click', function() {
                     if (!answered) {
+                        const choiceIndex = parseInt(this.getAttribute('data-choice-index'));
+                        
+                        // Remove selection from all choices
                         document.querySelectorAll('.choice').forEach(c => {
                             c.classList.remove('selected');
                             c.querySelector('input').checked = false;
                         });
+                        document.querySelectorAll('.image-choice-item').forEach(img => {
+                            img.classList.remove('selected');
+                        });
+
+                        // Select this choice
                         this.classList.add('selected');
                         this.querySelector('input').checked = true;
+
+                        // Also highlight the corresponding image if it exists
+                        const imageItem = document.querySelector(`.image-choice-item[data-choice-index="${choiceIndex}"]`);
+                        if (imageItem) {
+                            imageItem.classList.add('selected');
+                        }
                     }
                 });
 
@@ -1098,6 +1211,12 @@
                 // Highlight correct answer
                 const correctChoice = document.querySelector(`input[value="${question.correctAnswer}"]`).closest('.choice');
                 correctChoice.classList.add('correct-answer');
+
+                // Also highlight the correct image choice if it exists
+                const correctImageItem = document.querySelector(`.image-choice-item[data-choice-index="${question.correctAnswer}"]`);
+                if (correctImageItem) {
+                    correctImageItem.classList.add('correct-answer');
+                }
             }
 
             answered = true;
@@ -1138,6 +1257,33 @@
             }
         }
 
+        function selectImageChoice(index) {
+            if (answered) return;
+
+            // Select the corresponding choice on the right
+            const choiceElement = document.querySelector(`.choice[data-choice-index="${index}"]`);
+            if (choiceElement) {
+                // Remove selection from all choices
+                document.querySelectorAll('.choice').forEach(c => {
+                    c.classList.remove('selected');
+                    c.querySelector('input').checked = false;
+                });
+                document.querySelectorAll('.image-choice-item').forEach(img => {
+                    img.classList.remove('selected');
+                });
+
+                // Select the clicked choice
+                choiceElement.classList.add('selected');
+                choiceElement.querySelector('input').checked = true;
+
+                // Also highlight the image
+                const imageItem = document.querySelector(`.image-choice-item[data-choice-index="${index}"]`);
+                if (imageItem) {
+                    imageItem.classList.add('selected');
+                }
+            }
+        }
+
         function clearAnswer() {
             if (answered) return;
 
@@ -1150,6 +1296,10 @@
             document.querySelectorAll('.choice').forEach(choice => {
                 choice.classList.remove('selected');
                 choice.querySelector('input').checked = false;
+            });
+
+            document.querySelectorAll('.image-choice-item').forEach(img => {
+                img.classList.remove('selected');
             });
         }
 
