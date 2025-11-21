@@ -9260,10 +9260,10 @@
     "hasImageChoices": true,
     "imageUrl": "",
     "choices": [
-      "images/2025-03/asiav1/math-module-1-q2-optionA.png",
-      "images/2025-03/asiav1/math-module-1-q2-optionB.png",
-      "images/2025-03/asiav1/math-module-1-q2-optionC.png",
-      "images/2025-03/asiav1/math-module-1-q2-optionD.png"
+      "images/2025-03/asiav1/math-module-1-q2-diagram.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionB-new.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionC-new.png.png",
+      "images/2025-03/asiav1/math-module-1-q2-optionD-new.png"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": "A",
@@ -9285,7 +9285,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q3-diagram.png",
+    "imageUrl": "images/2025-03/asiav1/q3-scatterplot.png",
     "choices": [
       "y = 0.6 + 1.5x",
       "y = 0.6 - 1.5x",
@@ -9383,7 +9383,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "",
+    "imageUrl": "images/2025-03/asiav1/math-module-1-q7-diagram-new.png",
     "choices": [
       "1.0 second after being launched, the ball's height above ground is 3.9 meters",
       "3.9 seconds after being launched, the ball's height above ground is 1.0 meter",
@@ -9466,8 +9466,8 @@
     "hasImageChoices": false,
     "imageUrl": "",
     "choices": [],
-    "questionType": "grid-in",
-    "correctAnswer": "8",
+    "questionType": "multiple-choice",
+    "correctAnswer": "",
     "testId": "asiav1"
   },
   {
@@ -9569,10 +9569,10 @@
     "hasImageChoices": true,
     "imageUrl": "",
     "choices": [
-      "images/2025-03/asiav1/math-module-1-q14-optionA.png",
-      "images/2025-03/asiav1/math-module-1-q14-optionB.png",
-      "images/2025-03/asiav1/math-module-1-q14-optionC.png",
-      "images/2025-03/asiav1/math-module-1-q14-optionD.png"
+      "images/2025-03/asiav1/math-module-1-q15-optionA.png",
+      "images/2025-03/asiav1/math-module-1-q15-optionB.png",
+      "images/2025-03/asiav1/math-module-1-q15-optionC.png",
+      "images/2025-03/asiav1/math-module-1-q15-optionD.png"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": "B",
@@ -9587,19 +9587,19 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "",
+    "questionText": "In right triangle RST, the sum of the measures of angle R and angle S is 90 degrees. The value of sin(R) is 3\u221a17 /13. what is the value of cos(S)?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
+    "hasImageChoices": false,
     "imageUrl": "",
     "choices": [
-      "images/2025-03/asiav1/math-module-1-q15-optionA.png",
-      "images/2025-03/asiav1/math-module-1-q15-optionB.png",
-      "images/2025-03/asiav1/math-module-1-q15-optionC.png",
-      "images/2025-03/asiav1/math-module-1-q15-optionD.png"
+      "4\u221a17 /51",
+      "3\u221a17 /13",
+      "13\u221a17 /51",
+      "3\u221a17 /4"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 0,
@@ -9622,13 +9622,8 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "m(x) + p(x) = 2x + 3",
-      "m(x) + p(x) = 8x + 3",
-      "m(p(x)) = 15x + 12",
-      "m(p(x)) = 15x + 9"
-    ],
-    "questionType": "multiple-choice",
+    "choices": [],
+    "questionType": "grid-in",
     "correctAnswer": "C",
     "testId": "asiav1"
   },
@@ -9648,7 +9643,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q17-diagram.png",
+    "imageUrl": "",
     "choices": [],
     "questionType": "grid-in",
     "correctAnswer": "97",
@@ -9699,10 +9694,10 @@
     "hasImageChoices": false,
     "imageUrl": "",
     "choices": [
-      "",
-      "",
-      "",
-      ""
+      "M = 100 (0.24)^(t+22.96)",
+      "M = 100 (0.24)^(t/22.96)",
+      "M = 100 (0.76)^(t+22.96)",
+      "M = 100 (0.76)^(t/22.96)"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 0,
@@ -9717,19 +9712,19 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "",
+    "questionText": "x\u00b2 - 30x - 10 = 0\nWhat is the sum of the solutions to the given equation?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
+    "hasImageChoices": false,
     "imageUrl": "",
     "choices": [
-      "images/2025-03/asiav1/math-module-1-q20-optionA.png",
-      "images/2025-03/asiav1/math-module-1-q20-optionB.png",
-      "images/2025-03/asiav1/math-module-1-q20-optionC.png",
-      "images/2025-03/asiav1/math-module-1-q20-optionD.png"
+      "0",
+      "5",
+      "10",
+      "30"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 0,
@@ -9773,10 +9768,15 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-1-q22-diagram.png",
-    "choices": [],
-    "questionType": "grid-in",
-    "correctAnswer": "20",
+    "imageUrl": "",
+    "choices": [
+      "145",
+      "237",
+      "368",
+      "421"
+    ],
+    "questionType": "multiple-choice",
+    "correctAnswer": 0,
     "testId": "asiav1"
   },
   {
@@ -9981,7 +9981,7 @@
     "hasImageChoices": false,
     "imageUrl": "",
     "choices": [
-      "y =",
+      "y = 8",
       "y = 34.4/8",
       "y = 34.4",
       "y = 34.4 +8"
@@ -10026,7 +10026,7 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "-4 \ufe315x+6\ufe31+ 4 = - 20 What are all solutions to the given equation?",
+    "questionText": "-4 |5x+6| + 4 = -20\nWhat are all solutions to the given equation?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
@@ -10034,9 +10034,14 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [],
-    "questionType": "grid-in",
-    "correctAnswer": "8",
+    "choices": [
+      "0",
+      "0 and -(2/5)",
+      "0 and -(12/5)",
+      "There is no solution."
+    ],
+    "questionType": "multiple-choice",
+    "correctAnswer": 2,
     "testId": "asiav1"
   },
   {
@@ -10055,7 +10060,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav1/math-module-2-q11-diagram.png",
+    "imageUrl": "",
     "choices": [
       "-1",
       "6",
@@ -10084,10 +10089,10 @@
     "hasImageChoices": false,
     "imageUrl": "images/2025-03/asiav1/math-module-2-q12-diagram.png",
     "choices": [
-      "Rx + 12y =",
-      "Rx - 12y = -",
-      "12x + Ry =",
-      "12x \u2013 Ry = -"
+      "Rx + 12y = 18",
+      "Rx - 12y = - 18",
+      "12x + Ry = 18",
+      "12x \u2013 Ry = - 18"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 1,
@@ -10162,13 +10167,13 @@
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
-    "imageUrl": "",
+    "hasImageChoices": false,
+    "imageUrl": "images/2025-03/asiav1/math-module-2-q15-diagram.png",
     "choices": [
-      "images/2025-03/asiav1/math-module-2-q15-optionA.png",
-      "images/2025-03/asiav1/math-module-2-q15-optionB.png",
-      "images/2025-03/asiav1/math-module-2-q15-optionC.png",
-      "images/2025-03/asiav1/math-module-2-q15-optionD.png"
+      "f(x) = - 6^x + 1",
+      "f(x) = - 6^x + 3",
+      "f(x) = - 6^x + 4",
+      "f(x) = - 6^x + 5"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 1,
@@ -10191,8 +10196,13 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [],
-    "questionType": "grid-in",
+    "choices": [
+      "15x+10",
+      "15x+150",
+      "15x+25",
+      "15x+5"
+    ],
+    "questionType": "multiple-choice",
     "correctAnswer": "36",
     "testId": "asiav1"
   },
@@ -10213,8 +10223,13 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [],
-    "questionType": "grid-in",
+    "choices": [
+      "AB=35 and PQ = 35.",
+      "AB=35 and QR= 140.",
+      "The measures of angle B and angle R are 34\u00b0 and 88\u00b0, respectively",
+      "The measures of angle B and angle Q are 58\ufe12 and 34\ufe12, respectively."
+    ],
+    "questionType": "multiple-choice",
     "correctAnswer": "293",
     "testId": "asiav1"
   },
@@ -10287,10 +10302,10 @@
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
+    "hasImageChoices": false,
     "imageUrl": "images/2025-03/asiav1/math-module-2-q20-diagram.png",
     "choices": [],
-    "questionType": "multiple-choice",
+    "questionType": "grid-in",
     "correctAnswer": "D",
     "testId": "asiav1"
   },
@@ -10325,7 +10340,7 @@
     "region": "Asia",
     "testNumber": 1,
     "testName": "2025-03 Asia Test 1",
-    "questionText": "1. D 2. B 3. A 4. A 5. C 6. C 7. D 8. D 9. B 10. A 11. C 12. A 13. A 14. C 15. A 16. B 17. D 18. D 19. A 20. D 21. D 22. D 23. D 24. B 25. C 26. B 27. D 1. A 2. D 3. B 4. C 5. A 6. D 7. B 8. B 9. A 10. B 11. D 12. A 13. C 14. D 15. B",
+    "questionText": "The function f is defined by f(x) = ab^(x/n), where a, b, and n are constants, and b and n are integers. If f(5) = 7 and f(8) = 189, what is the value of f (10)?",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
@@ -10333,13 +10348,8 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "(-\u221e, -5] \u222a [3, \u221e)",
-      "[-5, 3]",
-      "(-\u221e, -1] \u222a [7, \u221e)",
-      "[-1, 7]"
-    ],
-    "questionType": "multiple-choice",
+    "choices": [],
+    "questionType": "grid-in",
     "correctAnswer": "C",
     "testId": "asiav1"
   },
@@ -11756,7 +11766,7 @@
     "region": "Asia",
     "testNumber": 2,
     "testName": "2025-03 Asia Test 2",
-    "questionText": "- The South Sudan Workers Trade Union Federation (SSWTUF) is a national union federation for the African nation of South Sudan. - It helps improve conditions for workers in that nation. - ITUC-Africa is a regional union federation that represents national union federations across Africa. - It represents the SSWTUF Which choice most effectively uses information from the given sentences to explain the purpose of national union federations?",
+    "questionText": " ",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
@@ -11764,14 +11774,9 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "Both NWRs are protected by endangered species.",
-      "The Pearl Harbor NWR is larger than the Crocodile Lake NWR.",
-      "Both NWRs were established to protect endangered species.",
-      "The endangered American crocodile is protected by the Crocodile Lake NWR in Florida."
-    ],
+    "choices": [],
     "questionType": "multiple-choice",
-    "correctAnswer": "C",
+    "correctAnswer": "",
     "testId": "asiav2"
   },
   {
@@ -11837,19 +11842,19 @@
     "region": "Asia",
     "testNumber": 2,
     "testName": "2025-03 Asia Test 2",
-    "questionText": "",
+    "questionText": "Which equation shows the relationship between the side lengths of the given triangle?\n\nNote: Figure not drawn to scale.",
     "prompt": "",
     "difficulty": "medium",
     "topic": "general",
     "subject": "Math",
     "explanation": "",
-    "hasImageChoices": true,
-    "imageUrl": "",
+    "hasImageChoices": false,
+    "imageUrl": "images/2025-03/asiav2/math-module-1-q2-diagram.png",
     "choices": [
-      "images/2025-03/asiav2/math-module-1-q2-optionA.png",
-      "images/2025-03/asiav2/math-module-1-q2-optionB.png",
-      "images/2025-03/asiav2/math-module-1-q2-optionC.png",
-      "images/2025-03/asiav2/math-module-1-q2-optionD.png"
+      "8b = 20",
+      "8 + b = 20",
+      "8\u00b2 + b\u00b2 = 20\u00b2",
+      "8\u00b2 - b\u00b2 = 20\u00b2"
     ],
     "questionType": "multiple-choice",
     "correctAnswer": 2,
@@ -11899,13 +11904,8 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "15",
-      "15.5",
-      "16",
-      "16.5"
-    ],
-    "questionType": "multiple-choice",
+    "choices": [],
+    "questionType": "grid-in",
     "correctAnswer": "D",
     "testId": "asiav2"
   },
@@ -11926,13 +11926,8 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "25",
-      "28",
-      "44",
-      "72"
-    ],
-    "questionType": "multiple-choice",
+    "choices": [],
+    "questionType": "grid-in",
     "correctAnswer": "C",
     "testId": "asiav2"
   },
@@ -11953,13 +11948,8 @@
     "explanation": "",
     "hasImageChoices": false,
     "imageUrl": "",
-    "choices": [
-      "84",
-      "97",
-      "113",
-      "226"
-    ],
-    "questionType": "multiple-choice",
+    "choices": [],
+    "questionType": "grid-in",
     "correctAnswer": "B",
     "testId": "asiav2"
   },
@@ -11979,7 +11969,7 @@
     "subject": "Math",
     "explanation": "",
     "hasImageChoices": false,
-    "imageUrl": "images/2025-03/asiav2/math-module-1-q7-diagram.png",
+    "imageUrl": "",
     "choices": [
       "(0, -1/4)",
       "(0, -3)",
