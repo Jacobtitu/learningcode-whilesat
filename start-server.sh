@@ -10,8 +10,11 @@ echo ""
 echo "💡 Press Ctrl+C to stop the server"
 echo ""
 
-# Try Python 3 first
-if command -v python3 &> /dev/null; then
+# Try using the custom server.py first
+if [ -f "server.py" ] && command -v python3 &> /dev/null; then
+    python3 server.py
+# Fallback to Python 3 http.server
+elif command -v python3 &> /dev/null; then
     python3 -m http.server 8000
 # Fallback to Python 2
 elif command -v python &> /dev/null; then
