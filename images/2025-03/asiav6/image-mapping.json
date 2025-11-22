@@ -1,0 +1,741 @@
+{
+  "total_pages": 100,
+  "total_images": 107,
+  "images_by_page": {
+    "1": [
+      {
+        "filename": "202503asiav6_page1_img1.png",
+        "index": 1,
+        "size": "1004x532"
+      }
+    ],
+    "2": [
+      {
+        "filename": "202503asiav6_page2_img1.png",
+        "index": 1,
+        "size": "998x518"
+      }
+    ],
+    "3": [
+      {
+        "filename": "202503asiav6_page3_img1.png",
+        "index": 1,
+        "size": "1006x528"
+      }
+    ],
+    "4": [
+      {
+        "filename": "202503asiav6_page4_img1.png",
+        "index": 1,
+        "size": "1008x529"
+      }
+    ],
+    "5": [
+      {
+        "filename": "202503asiav6_page5_img1.png",
+        "index": 1,
+        "size": "1005x527"
+      }
+    ],
+    "6": [
+      {
+        "filename": "202503asiav6_page6_img1.png",
+        "index": 1,
+        "size": "1004x527"
+      }
+    ],
+    "7": [
+      {
+        "filename": "202503asiav6_page7_img1.png",
+        "index": 1,
+        "size": "1006x533"
+      }
+    ],
+    "8": [
+      {
+        "filename": "202503asiav6_page8_img1.png",
+        "index": 1,
+        "size": "1006x526"
+      }
+    ],
+    "9": [
+      {
+        "filename": "202503asiav6_page9_img1.png",
+        "index": 1,
+        "size": "1006x520"
+      }
+    ],
+    "10": [
+      {
+        "filename": "202503asiav6_page10_img1.png",
+        "index": 1,
+        "size": "1007x525"
+      }
+    ],
+    "11": [
+      {
+        "filename": "202503asiav6_page11_img1.png",
+        "index": 1,
+        "size": "1012x526"
+      }
+    ],
+    "12": [
+      {
+        "filename": "202503asiav6_page12_img1.png",
+        "index": 1,
+        "size": "1007x521"
+      }
+    ],
+    "13": [
+      {
+        "filename": "202503asiav6_page13_img1.png",
+        "index": 1,
+        "size": "1006x523"
+      }
+    ],
+    "14": [
+      {
+        "filename": "202503asiav6_page14_img1.png",
+        "index": 1,
+        "size": "1007x529"
+      }
+    ],
+    "15": [
+      {
+        "filename": "202503asiav6_page15_img1.png",
+        "index": 1,
+        "size": "1009x525"
+      }
+    ],
+    "16": [
+      {
+        "filename": "202503asiav6_page16_img1.png",
+        "index": 1,
+        "size": "1010x523"
+      }
+    ],
+    "17": [
+      {
+        "filename": "202503asiav6_page17_img1.png",
+        "index": 1,
+        "size": "1007x524"
+      }
+    ],
+    "18": [
+      {
+        "filename": "202503asiav6_page18_img1.png",
+        "index": 1,
+        "size": "1007x525"
+      }
+    ],
+    "19": [
+      {
+        "filename": "202503asiav6_page19_img1.png",
+        "index": 1,
+        "size": "1004x530"
+      }
+    ],
+    "20": [
+      {
+        "filename": "202503asiav6_page20_img1.png",
+        "index": 1,
+        "size": "1008x524"
+      }
+    ],
+    "21": [
+      {
+        "filename": "202503asiav6_page21_img1.png",
+        "index": 1,
+        "size": "1003x525"
+      }
+    ],
+    "22": [
+      {
+        "filename": "202503asiav6_page22_img1.png",
+        "index": 1,
+        "size": "1005x527"
+      }
+    ],
+    "23": [
+      {
+        "filename": "202503asiav6_page23_img1.png",
+        "index": 1,
+        "size": "1007x528"
+      }
+    ],
+    "24": [
+      {
+        "filename": "202503asiav6_page24_img1.png",
+        "index": 1,
+        "size": "1006x522"
+      }
+    ],
+    "25": [
+      {
+        "filename": "202503asiav6_page25_img1.png",
+        "index": 1,
+        "size": "1006x525"
+      }
+    ],
+    "26": [
+      {
+        "filename": "202503asiav6_page26_img1.png",
+        "index": 1,
+        "size": "1007x527"
+      }
+    ],
+    "27": [
+      {
+        "filename": "202503asiav6_page27_img1.png",
+        "index": 1,
+        "size": "1005x526"
+      }
+    ],
+    "28": [
+      {
+        "filename": "202503asiav6_page28_img1.png",
+        "index": 1,
+        "size": "1027x534"
+      }
+    ],
+    "29": [
+      {
+        "filename": "202503asiav6_page29_img1.png",
+        "index": 1,
+        "size": "1056x560"
+      }
+    ],
+    "30": [
+      {
+        "filename": "202503asiav6_page30_img1.png",
+        "index": 1,
+        "size": "1062x549"
+      }
+    ],
+    "31": [
+      {
+        "filename": "202503asiav6_page31_img1.png",
+        "index": 1,
+        "size": "1063x554"
+      }
+    ],
+    "32": [
+      {
+        "filename": "202503asiav6_page32_img1.png",
+        "index": 1,
+        "size": "1065x558"
+      }
+    ],
+    "33": [
+      {
+        "filename": "202503asiav6_page33_img1.png",
+        "index": 1,
+        "size": "1064x553"
+      }
+    ],
+    "34": [
+      {
+        "filename": "202503asiav6_page34_img1.png",
+        "index": 1,
+        "size": "1067x558"
+      }
+    ],
+    "35": [
+      {
+        "filename": "202503asiav6_page35_img1.png",
+        "index": 1,
+        "size": "1059x556"
+      }
+    ],
+    "36": [
+      {
+        "filename": "202503asiav6_page36_img1.png",
+        "index": 1,
+        "size": "1064x560"
+      }
+    ],
+    "37": [
+      {
+        "filename": "202503asiav6_page37_img1.png",
+        "index": 1,
+        "size": "1066x551"
+      }
+    ],
+    "38": [
+      {
+        "filename": "202503asiav6_page38_img1.png",
+        "index": 1,
+        "size": "903x471"
+      }
+    ],
+    "39": [
+      {
+        "filename": "202503asiav6_page39_img1.png",
+        "index": 1,
+        "size": "907x469"
+      }
+    ],
+    "40": [
+      {
+        "filename": "202503asiav6_page40_img1.png",
+        "index": 1,
+        "size": "900x475"
+      }
+    ],
+    "41": [
+      {
+        "filename": "202503asiav6_page41_img1.png",
+        "index": 1,
+        "size": "908x475"
+      }
+    ],
+    "42": [
+      {
+        "filename": "202503asiav6_page42_img1.png",
+        "index": 1,
+        "size": "909x472"
+      }
+    ],
+    "43": [
+      {
+        "filename": "202503asiav6_page43_img1.png",
+        "index": 1,
+        "size": "909x477"
+      }
+    ],
+    "44": [
+      {
+        "filename": "202503asiav6_page44_img1.png",
+        "index": 1,
+        "size": "907x465"
+      }
+    ],
+    "45": [
+      {
+        "filename": "202503asiav6_page45_img1.png",
+        "index": 1,
+        "size": "906x471"
+      }
+    ],
+    "46": [
+      {
+        "filename": "202503asiav6_page46_img1.png",
+        "index": 1,
+        "size": "949x497"
+      }
+    ],
+    "47": [
+      {
+        "filename": "202503asiav6_page47_img1.png",
+        "index": 1,
+        "size": "951x497"
+      }
+    ],
+    "48": [
+      {
+        "filename": "202503asiav6_page48_img1.png",
+        "index": 1,
+        "size": "1022x528"
+      }
+    ],
+    "49": [
+      {
+        "filename": "202503asiav6_page49_img1.png",
+        "index": 1,
+        "size": "1022x526"
+      }
+    ],
+    "50": [
+      {
+        "filename": "202503asiav6_page50_img1.png",
+        "index": 1,
+        "size": "1020x530"
+      }
+    ],
+    "51": [
+      {
+        "filename": "202503asiav6_page51_img1.png",
+        "index": 1,
+        "size": "1022x528"
+      }
+    ],
+    "52": [
+      {
+        "filename": "202503asiav6_page52_img1.png",
+        "index": 1,
+        "size": "1020x530"
+      }
+    ],
+    "53": [
+      {
+        "filename": "202503asiav6_page53_img1.png",
+        "index": 1,
+        "size": "1009x524"
+      }
+    ],
+    "54": [
+      {
+        "filename": "202503asiav6_page54_img1.png",
+        "index": 1,
+        "size": "1023x529"
+      }
+    ],
+    "55": [
+      {
+        "filename": "202503asiav6_page55_img1.png",
+        "index": 1,
+        "size": "1297x689"
+      }
+    ],
+    "56": [
+      {
+        "filename": "202503asiav6_page56_img1.png",
+        "index": 1,
+        "size": "1303x683"
+      }
+    ],
+    "57": [
+      {
+        "filename": "202503asiav6_page57_img1.png",
+        "index": 1,
+        "size": "1303x685"
+      }
+    ],
+    "58": [
+      {
+        "filename": "202503asiav6_page58_img1.png",
+        "index": 1,
+        "size": "1306x674"
+      }
+    ],
+    "59": [
+      {
+        "filename": "202503asiav6_page59_img1.png",
+        "index": 1,
+        "size": "1302x675"
+      }
+    ],
+    "60": [
+      {
+        "filename": "202503asiav6_page60_img1.png",
+        "index": 1,
+        "size": "1294x672"
+      }
+    ],
+    "61": [
+      {
+        "filename": "202503asiav6_page61_img1.png",
+        "index": 1,
+        "size": "1298x677"
+      }
+    ],
+    "62": [
+      {
+        "filename": "202503asiav6_page62_img1.png",
+        "index": 1,
+        "size": "1300x664"
+      }
+    ],
+    "63": [
+      {
+        "filename": "202503asiav6_page63_img1.png",
+        "index": 1,
+        "size": "1304x655"
+      }
+    ],
+    "64": [
+      {
+        "filename": "202503asiav6_page64_img1.png",
+        "index": 1,
+        "size": "1300x676"
+      }
+    ],
+    "65": [
+      {
+        "filename": "202503asiav6_page65_img1.png",
+        "index": 1,
+        "size": "1308x675"
+      },
+      {
+        "filename": "202503asiav6_page65_img2.png",
+        "index": 2,
+        "size": "10x18"
+      },
+      {
+        "filename": "202503asiav6_page65_img3.png",
+        "index": 3,
+        "size": "10x18"
+      },
+      {
+        "filename": "202503asiav6_page65_img4.png",
+        "index": 4,
+        "size": "395x228"
+      },
+      {
+        "filename": "202503asiav6_page65_img5.png",
+        "index": 5,
+        "size": "28x27"
+      }
+    ],
+    "66": [
+      {
+        "filename": "202503asiav6_page66_img1.png",
+        "index": 1,
+        "size": "1301x676"
+      },
+      {
+        "filename": "202503asiav6_page66_img2.png",
+        "index": 2,
+        "size": "353x114"
+      }
+    ],
+    "67": [
+      {
+        "filename": "202503asiav6_page67_img1.png",
+        "index": 1,
+        "size": "1308x667"
+      }
+    ],
+    "68": [
+      {
+        "filename": "202503asiav6_page68_img1.png",
+        "index": 1,
+        "size": "1297x677"
+      },
+      {
+        "filename": "202503asiav6_page68_img2.png",
+        "index": 2,
+        "size": "381x256"
+      }
+    ],
+    "69": [
+      {
+        "filename": "202503asiav6_page69_img1.png",
+        "index": 1,
+        "size": "1302x669"
+      }
+    ],
+    "70": [
+      {
+        "filename": "202503asiav6_page70_img1.png",
+        "index": 1,
+        "size": "1309x676"
+      }
+    ],
+    "71": [
+      {
+        "filename": "202503asiav6_page71_img1.png",
+        "index": 1,
+        "size": "1304x671"
+      }
+    ],
+    "72": [
+      {
+        "filename": "202503asiav6_page72_img1.png",
+        "index": 1,
+        "size": "1294x670"
+      },
+      {
+        "filename": "202503asiav6_page72_img2.png",
+        "index": 2,
+        "size": "322x96"
+      }
+    ],
+    "73": [
+      {
+        "filename": "202503asiav6_page73_img1.png",
+        "index": 1,
+        "size": "1299x659"
+      }
+    ],
+    "74": [
+      {
+        "filename": "202503asiav6_page74_img1.png",
+        "index": 1,
+        "size": "1303x664"
+      }
+    ],
+    "75": [
+      {
+        "filename": "202503asiav6_page75_img1.png",
+        "index": 1,
+        "size": "1295x667"
+      }
+    ],
+    "76": [
+      {
+        "filename": "202503asiav6_page76_img1.png",
+        "index": 1,
+        "size": "1298x668"
+      }
+    ],
+    "77": [
+      {
+        "filename": "202503asiav6_page77_img1.png",
+        "index": 1,
+        "size": "1329x680"
+      }
+    ],
+    "78": [
+      {
+        "filename": "202503asiav6_page78_img1.png",
+        "index": 1,
+        "size": "1317x679"
+      }
+    ],
+    "79": [
+      {
+        "filename": "202503asiav6_page79_img1.png",
+        "index": 1,
+        "size": "1318x675"
+      }
+    ],
+    "80": [
+      {
+        "filename": "202503asiav6_page80_img1.png",
+        "index": 1,
+        "size": "1321x666"
+      }
+    ],
+    "81": [
+      {
+        "filename": "202503asiav6_page81_img1.png",
+        "index": 1,
+        "size": "1323x674"
+      }
+    ],
+    "82": [
+      {
+        "filename": "202503asiav6_page82_img1.png",
+        "index": 1,
+        "size": "1329x684"
+      }
+    ],
+    "83": [
+      {
+        "filename": "202503asiav6_page83_img1.png",
+        "index": 1,
+        "size": "1316x677"
+      }
+    ],
+    "84": [
+      {
+        "filename": "202503asiav6_page84_img1.png",
+        "index": 1,
+        "size": "1314x677"
+      }
+    ],
+    "85": [
+      {
+        "filename": "202503asiav6_page85_img1.png",
+        "index": 1,
+        "size": "1318x673"
+      }
+    ],
+    "86": [
+      {
+        "filename": "202503asiav6_page86_img1.png",
+        "index": 1,
+        "size": "1312x679"
+      }
+    ],
+    "87": [
+      {
+        "filename": "202503asiav6_page87_img1.png",
+        "index": 1,
+        "size": "1320x667"
+      }
+    ],
+    "88": [
+      {
+        "filename": "202503asiav6_page88_img1.png",
+        "index": 1,
+        "size": "1317x676"
+      }
+    ],
+    "89": [
+      {
+        "filename": "202503asiav6_page89_img1.png",
+        "index": 1,
+        "size": "1314x675"
+      }
+    ],
+    "90": [
+      {
+        "filename": "202503asiav6_page90_img1.png",
+        "index": 1,
+        "size": "1315x685"
+      }
+    ],
+    "91": [
+      {
+        "filename": "202503asiav6_page91_img1.png",
+        "index": 1,
+        "size": "1320x678"
+      }
+    ],
+    "92": [
+      {
+        "filename": "202503asiav6_page92_img1.png",
+        "index": 1,
+        "size": "1314x679"
+      }
+    ],
+    "93": [
+      {
+        "filename": "202503asiav6_page93_img1.png",
+        "index": 1,
+        "size": "1313x682"
+      }
+    ],
+    "94": [
+      {
+        "filename": "202503asiav6_page94_img1.png",
+        "index": 1,
+        "size": "1305x683"
+      }
+    ],
+    "95": [
+      {
+        "filename": "202503asiav6_page95_img1.png",
+        "index": 1,
+        "size": "1320x682"
+      }
+    ],
+    "96": [
+      {
+        "filename": "202503asiav6_page96_img1.png",
+        "index": 1,
+        "size": "1318x675"
+      }
+    ],
+    "97": [
+      {
+        "filename": "202503asiav6_page97_img1.png",
+        "index": 1,
+        "size": "1321x672"
+      }
+    ],
+    "98": [
+      {
+        "filename": "202503asiav6_page98_img1.png",
+        "index": 1,
+        "size": "1314x676"
+      }
+    ],
+    "99": [
+      {
+        "filename": "202503asiav6_page99_img1.png",
+        "index": 1,
+        "size": "1311x686"
+      }
+    ],
+    "100": [
+      {
+        "filename": "202503asiav6_page100_img1.png",
+        "index": 1,
+        "size": "1304x671"
+      }
+    ]
+  }
+}
